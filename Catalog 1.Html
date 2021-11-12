@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="DA.css">
+<title >Catalog Elevi</title>
+</head>
+<body>
+<h1 id="TitluC">Catalog Elevi Selectionati</h1>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Col 1.jpg" style="width:100%">
+        <div class="text">
+            <a href = "Col 1.html" >Nasca Marian</a>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Col 2.png" style="width:100%">
+        <div class="text">
+            <a href="Col 2.html">Pascu Veronica </a>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Col 3.png" style="width:100%">
+        <div class="text">
+            <a href = "Col 3.html"> Simionov Alexandra </a>
+        </div>
+		
+    </div>
+	
+<div class="mySlides fade">
+        <img src="P1.jpg" style="width:100%">
+        <div class="text">
+            <a href = "P1.html"> Oprita Alexandru </a>
+        </div>
+		
+    </div>
+</div>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<script>
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+</script>
+<p></p>
+<li id="Student"> Nasca Marian</li>
+<li id="Student"> Pascu Veronica</li>
+<li id="Student"> Simionov Alexandra</li>
+<li id="Student"> Oprita Alexandru</li>
+</body>
+</html>

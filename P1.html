@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS.css">
+<title>Oprita Alexandru-Ioan</title>
+<script>
+function Schimbaviitorul(){
+  document.getElementById("Numeetc").innerHTML="Inginer Microsisteme-Elect.";
+  document.getElementById("1").innerHTML="Inlocuire circuite PCB";
+  document.getElementById("2").innerHTML="Fabricarea si mentinerea de sisteme";
+  document.getElementById("3").innerHTML="Realizarea de noi tehnologii";
+  document.getElementById("Pozica").src="Pozajmek.jpg";
+  document.body.style.backgroundColor="#202020";
+  document.getElementById("Trunc").style.color="#ffffff";
+var element = document.getElementById('Pozica');
+element.style.opacity = "0.8";
+element.style.filter  = 'alpha(opacity=80)';}
+ function arVarst(){
+var azi = new  Date();
+var varstMea;
+var anNasc = document.getElementById("varsta").innerHTML;
+varstMea = azi.getFullYear()-parseInt(anNasc);
+document.getElementById("varsta").innerHTML =varstMea;}
+</script>
+</head>
+<body id="Trunc">
+<h1><i id="Numeetc">Oprita Alexandru-Ioan</i></h1>
+<img id="Pozica" src="P1.jpg" alt="Poza cu mine" width="300" height="450" >
+<p id="Email">Email: Oprita-alex@yahoo.com </p>
+<p> Citat Remarcabil: “Decat o restanta, mai bine o saptamana nedormita” </p>
+<p onmouseover="arVarst()" id="varsta">2002</p>
+<button onclick="Schimbaviitorul()">Alta Viata! </button>
+<h2>Educatie </h2>
+<p><table class="groove" >
+  <tr >
+	<th>Nume Disciplina</th>
+	<th>Link aferent</th>
+	<th>An </th>
+	</tr>
+	<tr><td>Circuite integrate analogice</td>
+	<Td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/26.pdf"> CIA </a> </td>
+	<td> 2 <td>
+</tr>
+ <tr><td>Tehnologi Web</td>
+ <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/35.pdf"> TW </a></td>
+ <td> 3</td></tr>
+ <tr><td>Materiale pentru electronica</td>
+ <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/18.pdf" > MPE </a></td>
+ <td>2</td></tr>
+<tr><td>Componente si circuite pasive</td>
+ <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf"> CCP</a></td>
+ <td> 1 </td></tr>
+</table></p>
+<h3> Hobby-uri</h3><ul>
+<li id="1" >Plimbatul.</li>
+<li id="2">Informarea de noutati in lumea Gaimingului.</li >
+<li id="3">Colectarea diferitelor informatii de pe net.</li >
+</ul>
+</body>
+</html>

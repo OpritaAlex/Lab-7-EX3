@@ -1,0 +1,12 @@
+body {background-color: rgb(204,204,204)}
+table,th,tr {border-style: groove;}
+ul {border-style: groove; width: 40%}
+h1 {text-align: center;}
+h2,h3{font-family: Papyrus;}
+table {width: 40%;}
+h2,h3 {font-size: 30px;}
+#Email {font-weight: 1000}
+img {border-radius: 50px; display: block; margin-left: auto; margin-right: auto; opacity: 0.9;}
+body {text align: center}
+#Student {text-align: center}
+#TitluC {font-family: Courier New; font-size: 40px; color:red }
